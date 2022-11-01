@@ -1,5 +1,5 @@
 ﻿  Game.cpp
-E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pair-Programming\Game.cpp(60,98): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(32,98): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=int
@@ -8,7 +8,7 @@ E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pai
           [
               T=float
           ]
-E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pair-Programming\Game.cpp(60,68): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(32,68): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=int
@@ -17,20 +17,7 @@ E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pai
           [
               T=float
           ]
-  main.cpp
   Particle.cpp
   ParticleEffect.cpp
-E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pair-Programming\ParticleEffect.cpp(55,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pair-Programming\ParticleEffect.cpp(56,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pair-Programming\ParticleEffect.cpp(59,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Pair-Programming\ParticleEffect.cpp(59,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
   Generating Code...
-  Pair-Programming.vcxproj -> E:\SFML Projects\pair-programming-game230-main\pair-programming-game230-main\Debug\Pair-Programming.exe
+  Pair-Programming.vcxproj -> E:\SFML Projects\SFML_Assignment3\Debug\Pair-Programming.exe

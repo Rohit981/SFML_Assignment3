@@ -11,6 +11,7 @@
 #include <SFML/OpenGL.hpp>
 #include <SFML/Main.hpp>
 #include <iostream>
+#include "ParticleEffect.h"
 
 
 namespace gm {
