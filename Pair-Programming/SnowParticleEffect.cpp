@@ -12,3 +12,8 @@ SnowParticleEffect::~SnowParticleEffect()
 {
 
 }
+
+void SnowParticleEffect::Update(sf::RenderWindow& window)
+{
+
+}

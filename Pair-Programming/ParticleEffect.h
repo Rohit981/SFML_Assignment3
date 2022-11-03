@@ -27,7 +27,7 @@ namespace gm {
 
 			ParticleEffect(sf::Vector2f position);
 			~ParticleEffect();
-			virtual void Update();
+			virtual void Update(sf::RenderWindow& window);
 			virtual void Render(sf::RenderWindow& window);
 
 			

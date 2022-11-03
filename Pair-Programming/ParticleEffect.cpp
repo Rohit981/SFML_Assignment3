@@ -28,7 +28,7 @@ ParticleEffect::~ParticleEffect() {
     
 }
 
-void ParticleEffect::Update() {
+void ParticleEffect::Update(sf::RenderWindow& window) {
    /* particlesAlive = 0;
     for (int i = 0; i < 40; i++) {
         if (particleArray[i]) {

@@ -7,8 +7,15 @@ namespace gm
 {
 	class SnowParticleEffect: public ParticleEffect
 	{
-		SnowParticleEffect();
-		~SnowParticleEffect();
+		public:
+			SnowParticleEffect();
+			~SnowParticleEffect();
+
+			virtual void Update(sf::RenderWindow& window)override;
+
+		private:
+
+
 	};
 
 }
