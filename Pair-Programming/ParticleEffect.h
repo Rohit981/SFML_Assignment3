@@ -10,7 +10,7 @@
 #include <SFML/OpenGL.hpp>
 #include <SFML/Main.hpp>
 #include <iostream>
-
+#include "Particle.h"
 
 
 
@@ -33,16 +33,20 @@ namespace gm {
 			
 
 			//creates a new particle for every element of the particles array
-			virtual void Emit();
+			virtual void CreateParticleEffect() = 0;
 
 			// adds a new particle at the specified index in the particles 
 			// array (it should also randomize the particle velocity in some way)
 			void AddParticle(int index);
 
+			Particle** particleArray = new Particle * [400];
+
 		private:
 	
 			//const int ARRAY_LENGTH = 40;
-		//Particle* particleArray[40];
+			
+			
+			
 	};
 
 }

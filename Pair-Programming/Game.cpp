@@ -29,15 +29,15 @@ void Game::handleInput(sf::RenderWindow& window) {
 				delete pEffect;
 				pEffect = nullptr;
 			}
-			pEffect = new ParticleEffect(Vector2f(Mouse::getPosition(window).x, Mouse::getPosition(window).y));
-			pEffect->Emit();
+			pEffect = new SnowParticleEffect(Vector2f(Mouse::getPosition(window).x, Mouse::getPosition(window).y));
+			pEffect->CreateParticleEffect();
 		}
 	}
 }
 
 void Game::update(sf::RenderWindow& window) {
 	if (pEffect) {
-		pEffect->Update();
+		pEffect->Update(window);
 		if (pEffect->particlesAlive <= 0) {
 			pEffect = nullptr;
 		}

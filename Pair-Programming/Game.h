@@ -11,7 +11,7 @@
 #include <SFML/OpenGL.hpp>
 #include <SFML/Main.hpp>
 #include <iostream>
-#include "ParticleEffect.h"
+#include "SnowParticleEffect.h"
 
 
 namespace gm {
@@ -24,7 +24,8 @@ namespace gm {
 		void render(sf::RenderWindow& window);
 
 	private:
-		ParticleEffect* pEffect = nullptr;
+		
+		SnowParticleEffect* pEffect = nullptr;
 	};
 }
 

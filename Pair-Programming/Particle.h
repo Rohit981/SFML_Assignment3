@@ -17,7 +17,6 @@ enum ParticleShape
 {
     Circle,
     Triangle,
-
     Square
 
 
@@ -45,7 +44,7 @@ namespace gm
             Particle(sf::Vector2f position, float size, float lifespan = 60.f);
             ~Particle();
 
-            virtual void Update(sf::RenderWindow& window) = 0;
+            virtual void Update(sf::RenderWindow& window);
 
             virtual void Render(sf::RenderWindow& window) = 0;
 
@@ -56,10 +55,10 @@ namespace gm
             virtual const sf::Vector2f& GetPosition() const;
             virtual void SetPosition(const sf::Vector2f& velocity);
 
-            virtual const float GetLifeSpan();
+            virtual const float GetLifeSpan() const;
             virtual void SetLifeSpan(const float lifeSpan);
 
-            virtual const float GetLifeSpanRemaining();
+            virtual const float GetLifeSpanRemaining() const;
             virtual void SetLifeSpanRemaining(const float lifeSpanRemainig);
 
             virtual const bool ISAlive();

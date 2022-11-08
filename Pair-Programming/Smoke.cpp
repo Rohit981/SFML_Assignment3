@@ -11,3 +11,8 @@ Smoke::~Smoke()
 {
 
 }
+
+void Smoke::CreateParticleEffect()
+{
+
+}

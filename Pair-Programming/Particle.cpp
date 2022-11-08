@@ -5,7 +5,7 @@ using namespace std;
 using namespace sf;
 using namespace gm;
 
-gm::Particle::Particle()
+Particle::Particle()
 {
 }
 
@@ -14,7 +14,8 @@ Particle::Particle(Vector2f position, float size,float lifespan)
 	shape = ParticleShape::Circle;
     this->size = size;
   
-    if (shape == ParticleShape::Circle) {
+    if (shape == ParticleShape::Circle) 
+    {
         body = CircleShape(size);
     }
 
@@ -23,6 +24,16 @@ Particle::Particle(Vector2f position, float size,float lifespan)
 Particle::~Particle()
 {
 }
+
+void Particle::Update(sf::RenderWindow& window)
+{
+    ageOfParticle++;
+    position += velocity;
+    body.setPosition(position);
+    body.setRadius(size* (lifespan - ageOfParticle) / lifespan);
+}
+
+
 
 const sf::Vector2f& gm::Particle::GetVelocity() const
 {
@@ -46,7 +57,7 @@ void gm::Particle::SetPosition(const sf::Vector2f& position)
     this->position = position;
 }
 
-const float gm::Particle::GetLifeSpan()
+const float gm::Particle::GetLifeSpan() const
 {
     return lifespan;
 }
@@ -56,7 +67,7 @@ void gm::Particle::SetLifeSpan(const float lifeSpan)
     this->lifespan = lifeSpan;
 }
 
-const float gm::Particle::GetLifeSpanRemaining()
+const float gm::Particle::GetLifeSpanRemaining() const
 {
     return LifeSpanRemaining;
 }
@@ -76,9 +87,6 @@ void gm::Particle::SetAlive(const bool alive)
    this->alive = alive;
 }
 
-//ageOfParticle++;
-//position += velocity;
-//body.setPosition(position);
-//body.setRadius(size* (lifespan - ageOfParticle) / lifespan);
+
 
 

@@ -11,6 +11,8 @@ namespace gm {
 		Smoke();
 		~Smoke();
 
+		virtual void CreateParticleEffect() override;
+
 	private:
 
 

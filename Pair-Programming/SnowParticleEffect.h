@@ -11,7 +11,7 @@ namespace gm
 			SnowParticleEffect();
 			~SnowParticleEffect();
 
-			virtual void Update(sf::RenderWindow& window)override;
+			virtual void CreateParticleEffect() override;
 
 		private:
 
