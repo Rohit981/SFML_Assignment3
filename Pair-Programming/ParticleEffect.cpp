@@ -15,10 +15,7 @@ ParticleEffect::ParticleEffect(Vector2f position)
 {
     this->position = position;
 
-    for (int i = 0; i < 40; i++)
-    {
-        *(particleArray + i) = nullptr;
-    }
+    
 }
 
 ParticleEffect::~ParticleEffect() {
@@ -31,7 +28,7 @@ ParticleEffect::~ParticleEffect() {
 
 void ParticleEffect::Update(sf::RenderWindow& window) 
 {
-    particlesAlive = 0;
+   /* particlesAlive = 0;
     for (int i = 0; i < 40; i++)
     {
         if (particleArray[i]) {
@@ -43,16 +40,16 @@ void ParticleEffect::Update(sf::RenderWindow& window)
                 particlesAlive--;
             }
         }
-    }
+    }*/
 }
 
 void ParticleEffect::Render(RenderWindow& window) {
-    for (int i = 0; i < 40; i++) 
+   /* for (int i = 0; i < 40; i++) 
     {
         if (particleArray[i]) {
             particleArray[i]->Render(window);
         }
-    }
+    }*/
 }
 
 

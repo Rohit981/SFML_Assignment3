@@ -39,7 +39,7 @@ namespace gm {
 			// array (it should also randomize the particle velocity in some way)
 			void AddParticle(int index);
 
-			Particle** particleArray = new Particle * [400];
+			Particle* particle;
 
 		private:
 	
