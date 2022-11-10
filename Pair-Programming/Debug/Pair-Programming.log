@@ -1,6 +1,6 @@
 ﻿  Game.cpp
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.h(21,29): error C3078: array size must be specified in new expressions without an initializer
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(32,102): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(64,108): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=int
@@ -9,7 +9,7 @@ E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(32,102): warning C42
           [
               T=float
           ]
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(32,72): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(64,78): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=int
@@ -18,30 +18,4 @@ E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(32,72): warning C424
           [
               T=float
           ]
-  SnowParticleEffect.cpp
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.h(21,29): error C3078: array size must be specified in new expressions without an initializer
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(44,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(45,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(47): error C2259: 'gm::Particle': cannot instantiate abstract class
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Particle.h(27): message : see declaration of 'gm::Particle'
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(47): message : due to following members:
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(47): message : 'void gm::Particle::Render(sf::RenderWindow &)': is abstract
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Particle.h(50): message : see declaration of 'gm::Particle::Render'
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(47,39): error C2259: 'gm::Particle': cannot instantiate abstract class
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Particle.h(27): message : see declaration of 'gm::Particle'
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(47,39): message : due to following members:
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(47,39): message : 'void gm::Particle::Render(sf::RenderWindow &)': is abstract
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Particle.h(50): message : see declaration of 'gm::Particle::Render'
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(48,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.cpp(48,51): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-  main.cpp
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\SnowParticleEffect.h(21,29): error C3078: array size must be specified in new expressions without an initializer
-  Generating Code...
+  Pair-Programming.vcxproj -> E:\SFML Projects\SFML_Assignment3\Debug\Pair-Programming.exe

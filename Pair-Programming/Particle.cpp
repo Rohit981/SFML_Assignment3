@@ -1,4 +1,4 @@
-//TEAM: Daniel M., Rohit P., Gabriel O.
+
 #include "Particle.h"
 
 using namespace std;
@@ -9,30 +9,12 @@ Particle::Particle()
 {
 }
 
-Particle::Particle(Vector2f position, float size,float lifespan)
-{
-	shape = ParticleShape::Circle;
-    this->size = size;
-  
-    if (shape == ParticleShape::Circle) 
-    {
-        body = CircleShape(size);
-    }
+Particle::Particle(Vector2f position):position(position){}
 
-}
 
 Particle::~Particle()
 {
 }
-
-void Particle::Update(sf::RenderWindow& window)
-{
-    ageOfParticle++;
-    position += velocity;
-    body.setPosition(position);
-    body.setRadius(size* (lifespan - ageOfParticle) / lifespan);
-}
-
 
 
 const sf::Vector2f& gm::Particle::GetVelocity() const

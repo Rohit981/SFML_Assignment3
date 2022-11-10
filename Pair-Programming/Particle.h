@@ -1,4 +1,4 @@
-//TEAM: Daniel M., Rohit P., Gabriel O.
+
 #ifndef PARTICLE_H
 #define PARTICLE_H
 
@@ -12,39 +12,29 @@
 #include <iostream>
 
 
-
-enum ParticleShape
-{
-    Circle,
-    Triangle,
-    Square
-
-
-};
 namespace gm
 {
     class Particle
     {
+    protected:
+      
+        sf::Vector2f position;
+        sf::Vector2f velocity;
+        bool alive = false;
 
         private:
-            ParticleShape shape;
-            sf::CircleShape body;
-
-            float size;
-            sf::Vector2f position;
-            sf::Vector2f velocity;
-            bool alive = false;
 
         public:
+           
             int ageOfParticle = 0;
-            float lifespan = 0;
+            float lifespan = 60.f;
             float LifeSpanRemaining = 0;
 
             Particle();
-            Particle(sf::Vector2f position, float size, float lifespan = 60.f);
+            Particle(sf::Vector2f position);
             ~Particle();
 
-            virtual void Update(sf::RenderWindow& window);
+            virtual void Update(sf::RenderWindow& window) = 0;
 
             virtual void Render(sf::RenderWindow& window) = 0;
 

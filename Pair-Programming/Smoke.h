@@ -9,6 +9,7 @@ namespace gm {
 	{
 	public:
 		Smoke();
+		Smoke(const sf::Vector2f& position, float size);
 		~Smoke();
 
 		virtual void CreateParticleEffect() override;

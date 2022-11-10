@@ -1,4 +1,4 @@
-//TEAM: Daniel M., Rohit P., Gabriel O.
+
 #ifndef GAME_H
 #define GAME_H
 
@@ -11,7 +11,7 @@
 #include <SFML/OpenGL.hpp>
 #include <SFML/Main.hpp>
 #include <iostream>
-#include "SnowParticleEffect.h"
+#include "ParticleEffect.h"
 
 
 namespace gm {
@@ -25,7 +25,9 @@ namespace gm {
 
 	private:
 		
-		SnowParticleEffect* pEffect = nullptr;
+		ParticleEffect**particleEffectObjects;
+
+		int numberofParticles;
 	};
 }
 

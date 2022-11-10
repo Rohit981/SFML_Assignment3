@@ -1,4 +1,4 @@
-//TEAM: Daniel M., Rohit P., Gabriel O.
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
@@ -10,10 +10,6 @@
 #include "Game.h"
 using namespace gm;
 
-/*
-Created by Daniel Madalengoitia, Rohit Pathak and Gabriel Oliver for GAME230
-
-*/
 
 int main()
 {

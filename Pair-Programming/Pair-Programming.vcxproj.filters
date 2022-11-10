@@ -27,7 +27,7 @@
     <ClCompile Include="ParticleEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SnowParticleEffect.cpp">
+    <ClCompile Include="Explosion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Smoke.cpp">
@@ -44,7 +44,7 @@
     <ClInclude Include="ParticleEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SnowParticleEffect.h">
+    <ClInclude Include="Explosion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Smoke.h">

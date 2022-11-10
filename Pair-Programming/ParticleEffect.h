@@ -1,4 +1,4 @@
-//TEAM: Daniel M., Rohit P., Gabriel O.
+
 #ifndef PARTICLE_EFFECT_H
 #define PARTICLE_EFFECT_H
 
@@ -14,24 +14,26 @@
 
 
 
-namespace gm {
-	class ParticleEffect
+namespace gm 
+{
+	class ParticleEffect: public Particle
 	{
+		
+	protected:
+		sf::Shape* shape;
+
 		public:
-
-			sf::Vector2f position;
-
-			int particlesAlive;
+	
+			int particlesAlive = 0;
 
 			ParticleEffect();
 
-			ParticleEffect(sf::Vector2f position);
+			ParticleEffect(const sf::Vector2f& position);
 			~ParticleEffect();
 			virtual void Update(sf::RenderWindow& window);
 			virtual void Render(sf::RenderWindow& window);
 
-			
-
+			virtual void setSize(float radius);
 			//creates a new particle for every element of the particles array
 			virtual void CreateParticleEffect() = 0;
 
@@ -39,17 +41,12 @@ namespace gm {
 			// array (it should also randomize the particle velocity in some way)
 			void AddParticle(int index);
 
-			Particle* particle;
 
-		private:
-	
-			//const int ARRAY_LENGTH = 40;
-			
-			
+		
 			
 	};
 
 }
 
-#endif // !PARTICLE_EFFECT_H
+#endif 
 
