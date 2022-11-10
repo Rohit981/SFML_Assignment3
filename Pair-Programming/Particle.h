@@ -22,7 +22,6 @@ namespace gm
         sf::Vector2f velocity;
         bool alive = false;
 
-        private:
 
         public:
            

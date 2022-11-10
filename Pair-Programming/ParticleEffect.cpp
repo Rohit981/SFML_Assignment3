@@ -37,7 +37,3 @@ void ParticleEffect::setSize(float radius)
 {
     dynamic_cast<CircleShape*>(shape)->setRadius(radius);
 }
-
-
-//particlesAlive = 0;
-//Update(window);

@@ -1,5 +1,5 @@
-#ifndef SNOW_PARTICLE_EFFECT_H
-#define SNOW_PARTICLE_EFFECT_H
+#ifndef EXPLOSION_H
+#define  EXPLOSION_H
 
 #include "ParticleEffect.h"
 
@@ -22,4 +22,4 @@ namespace gm
 
 }
 
-#endif // !SNOW_PARTICLE_H
+#endif 

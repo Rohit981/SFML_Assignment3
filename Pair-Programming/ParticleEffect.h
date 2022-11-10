@@ -23,8 +23,6 @@ namespace gm
 		sf::Shape* shape;
 
 		public:
-	
-			int particlesAlive = 0;
 
 			ParticleEffect();
 
@@ -36,14 +34,7 @@ namespace gm
 			virtual void setSize(float radius);
 			//creates a new particle for every element of the particles array
 			virtual void CreateParticleEffect() = 0;
-
-			// adds a new particle at the specified index in the particles 
-			// array (it should also randomize the particle velocity in some way)
-			void AddParticle(int index);
-
-
-		
-			
+	
 	};
 
 }
