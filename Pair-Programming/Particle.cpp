@@ -5,15 +5,25 @@ using namespace std;
 using namespace sf;
 using namespace gm;
 
+
 Particle::Particle()
 {
+    
 }
 
-Particle::Particle(Vector2f position):position(position){}
+Particle::Particle(const sf::Vector2f& position) {}
+
 
 
 Particle::~Particle()
 {
+}
+
+void Particle::Update(sf::RenderWindow& window)
+{
+    position += GetVelocity();
+    shape->setPosition(position);
+    
 }
 
 
@@ -67,6 +77,16 @@ const bool gm::Particle::ISAlive()
 void gm::Particle::SetAlive(const bool alive)
 {
    this->alive = alive;
+}
+
+const float Particle::GetSize()const
+{
+    return size;
+}
+
+void Particle::SetSize(const float radius)
+{
+    dynamic_cast<CircleShape*>(shape)->setRadius(radius);
 }
 
 

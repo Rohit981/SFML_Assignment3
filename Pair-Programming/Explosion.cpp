@@ -1,23 +1,26 @@
 #include "Explosion.h"
+#include "CircleObject.h"
 
 using namespace gm;
 using namespace std;
 using namespace sf;
 
-Explosion::Explosion()
+
+Explosion::Explosion(const sf::Vector2f& position):ParticleEffect(position)
 {
-    shape = new CircleShape();
-    shape->setFillColor(Color::White);
+    this->position = position;
 
     
-}
 
-Explosion::Explosion(const sf::Vector2f& position, float size):ParticleEffect(position)
-{
-    shape = new CircleShape(size);
-    shape->setFillColor(Color::White);
-    shape->setPosition(position);
-    GetLifeSpan();
+    for (int i = 0; i < numberofParticles; i++)
+    {
+        
+        particleObjects[i] = new CircleObject(position);
+        
+    }
+  
+
+    
 }
 
 Explosion::~Explosion()
@@ -28,9 +31,16 @@ Explosion::~Explosion()
 
 void Explosion::CreateParticleEffect()
 {
-    int randX = ((float(rand()) / float(RAND_MAX)) * (15 + 15)) - 15;
-    int randY = ((float(rand()) / float(RAND_MAX)) * (15 + 15)) - 15;
-    sf::Vector2f randomVelocity = sf::Vector2f(randX, randY);
-    SetVelocity(randomVelocity);
+    for (int  i = 0; i < numberofParticles; i++)
+    {
+        int randX = ((float(rand()) / float(RAND_MAX)) * (15 + 15)) - 15;
+        int randY = ((float(rand()) / float(RAND_MAX)) * (15 + 15)) - 15;
+        sf::Vector2f randomVelocity = sf::Vector2f(randX, randY);
+        float randSize = ((float(rand()) / float(RAND_MAX)) * (12 - 1)) + 1;
+        particleObjects[i]->SetSize(randSize);
+        particleObjects[i]->SetPosition(position);
+        particleObjects[i]->SetVelocity(randomVelocity);
+
+    }
    
 }

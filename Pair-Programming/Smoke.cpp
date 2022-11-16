@@ -1,20 +1,23 @@
 #include "Smoke.h"
+#include "CircleObject.h"
 
 using namespace std;
 using namespace gm;
 using namespace sf;
 
-Smoke::Smoke()
+
+Smoke::Smoke(const sf::Vector2f& position): ParticleEffect(position)
 {
-	shape = new CircleShape();
-	shape->setFillColor(Color::Yellow);
-}
-Smoke::Smoke(const sf::Vector2f& position, float size)
-{
-	shape = new CircleShape(size);
-	shape->setFillColor(Color::Yellow);
-	shape->setPosition(position);
-	GetLifeSpan();
+    this->position = position;
+
+
+
+    for (int i = 0; i < numberofParticles; i++)
+    {
+
+        particleObjects[i] = new CircleObject(position);
+
+    }
 }
 Smoke::~Smoke()
 {
@@ -23,8 +26,15 @@ Smoke::~Smoke()
 
 void Smoke::CreateParticleEffect()
 {
-	int randX = 0;
-	int randY = ((float(rand()) / float(RAND_MAX)) * (15 + 15)) - 15;
-	sf::Vector2f randomVelocity = sf::Vector2f(randX, randY);
-	SetVelocity(randomVelocity);
+    for (int i = 0; i < numberofParticles; i++)
+    {
+        int randX = 0;
+        int randY = ((float(rand()) / float(RAND_MAX)) * (15 + 15)) - 15;
+        sf::Vector2f randomVelocity = sf::Vector2f(randX, randY);
+        float randSize = ((float(rand()) / float(RAND_MAX)) * (12 - 1)) + 1;
+        particleObjects[i]->SetSize(randSize);
+        particleObjects[i]->SetPosition(position);
+        particleObjects[i]->SetVelocity(randomVelocity);
+
+    }
 }

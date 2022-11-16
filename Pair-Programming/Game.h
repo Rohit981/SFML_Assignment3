@@ -14,6 +14,13 @@
 #include "ParticleEffect.h"
 
 
+enum ParticleObjects
+{
+	EXPLOSION,
+	SMOKE
+};
+
+
 namespace gm {
 	class Game {
 	public:
@@ -24,10 +31,11 @@ namespace gm {
 		void render(sf::RenderWindow& window);
 
 	private:
-		
-		ParticleEffect**particleEffectObjects;
 
-		int numberofParticles;
+		ParticleEffect* particleEffectObjects;
+
+		ParticleObjects ParticleEnum;
+
 	};
 }
 

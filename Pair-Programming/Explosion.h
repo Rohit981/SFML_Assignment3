@@ -8,8 +8,7 @@ namespace gm
 	class Explosion: public ParticleEffect
 	{
 		public:
-			Explosion();
-			Explosion(const sf::Vector2f& position, float size);
+			Explosion(const sf::Vector2f& position);
 			~Explosion();
 
 			virtual void CreateParticleEffect() override;

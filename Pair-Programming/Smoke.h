@@ -8,8 +8,7 @@ namespace gm {
 	class Smoke : public ParticleEffect
 	{
 	public:
-		Smoke();
-		Smoke(const sf::Vector2f& position, float size);
+		Smoke(const sf::Vector2f& position);
 		~Smoke();
 
 		virtual void CreateParticleEffect() override;

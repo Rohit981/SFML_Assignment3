@@ -16,24 +16,23 @@ namespace gm
 {
     class Particle
     {
-    protected:
-      
-        sf::Vector2f position;
+      private:
         sf::Vector2f velocity;
         bool alive = false;
-
+        float size;
 
         public:
-           
             int ageOfParticle = 0;
             float lifespan = 60.f;
             float LifeSpanRemaining = 0;
+            sf::Shape* shape;
+            sf::Vector2f position;
 
             Particle();
-            Particle(sf::Vector2f position);
+            Particle(const sf::Vector2f& position);
             ~Particle();
 
-            virtual void Update(sf::RenderWindow& window) = 0;
+            virtual void Update(sf::RenderWindow& window);
 
             virtual void Render(sf::RenderWindow& window) = 0;
 
@@ -52,6 +51,9 @@ namespace gm
 
             virtual const bool ISAlive();
             virtual void SetAlive(const bool alive);
+
+            virtual const float GetSize() const;
+            virtual void SetSize(const float radius);
     
     };
 

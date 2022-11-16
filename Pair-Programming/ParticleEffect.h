@@ -16,11 +16,13 @@
 
 namespace gm 
 {
-	class ParticleEffect: public Particle
+	class ParticleEffect
 	{
 		
 	protected:
-		sf::Shape* shape;
+		Particle** particleObjects;
+		int numberofParticles;
+		sf::Vector2f position;
 
 		public:
 
@@ -31,7 +33,6 @@ namespace gm
 			virtual void Update(sf::RenderWindow& window);
 			virtual void Render(sf::RenderWindow& window);
 
-			virtual void setSize(float radius);
 			//creates a new particle for every element of the particles array
 			virtual void CreateParticleEffect() = 0;
 	
