@@ -8,8 +8,7 @@ class CircleObject : public Particle
 {
 public:
 	CircleObject(const sf::Vector2f& position);
-	~CircleObject();
-
+	
 	virtual void Render(sf::RenderWindow& window) override;
 	
 };

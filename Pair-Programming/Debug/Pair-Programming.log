@@ -1,2 +1,28 @@
 ﻿  CircleObject.cpp
+  Explosion.cpp
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(36,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(37,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(38,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(38,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Smoke.cpp
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Smoke.cpp(32,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Smoke.cpp(33,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Smoke.cpp(33,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
   Pair-Programming.vcxproj -> E:\SFML Projects\SFML_Assignment3\Debug\Pair-Programming.exe

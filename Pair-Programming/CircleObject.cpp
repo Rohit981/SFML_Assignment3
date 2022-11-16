@@ -11,10 +11,7 @@ CircleObject::CircleObject(const sf::Vector2f& position): Particle(position)
     shape->setPosition(position);
 }
 
-CircleObject::~CircleObject()
-{
 
-}
 
 
 void CircleObject::Render(sf::RenderWindow& window)
