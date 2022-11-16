@@ -1,28 +1,39 @@
-﻿  CircleObject.cpp
-  Explosion.cpp
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(36,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(37,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(38,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+﻿  Game.cpp
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(48,108): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
+          [
+              T=int
+          ]
+          and
           [
               T=float
           ]
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Explosion.cpp(38,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(48,78): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
+          [
+              T=int
+          ]
+          and
           [
               T=float
           ]
-  Smoke.cpp
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Smoke.cpp(32,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Smoke.cpp(33,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(52,104): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
+          [
+              T=int
+          ]
+          and
           [
               T=float
           ]
-E:\SFML Projects\SFML_Assignment3\Pair-Programming\Smoke.cpp(33,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\SFML Projects\SFML_Assignment3\Pair-Programming\Game.cpp(52,74): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
+          [
+              T=int
+          ]
+          and
           [
               T=float
           ]
-  Generating Code...
   Pair-Programming.vcxproj -> E:\SFML Projects\SFML_Assignment3\Debug\Pair-Programming.exe

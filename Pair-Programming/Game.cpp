@@ -68,13 +68,9 @@ void Game::update(sf::RenderWindow& window)
 void Game::render(sf::RenderWindow& window) 
 {
 	window.clear();
-	if (particleEffectObjects != nullptr)
-	{
-		
-		particleEffectObjects->Render(window);
 
-		
-	}
+	if (particleEffectObjects != nullptr)
+	particleEffectObjects->Render(window);
 
 	window.display();
 }
